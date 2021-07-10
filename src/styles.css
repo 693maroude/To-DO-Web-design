@@ -325,10 +325,6 @@ header .subtitle {
 }
 
 @media (max-width: 1000px) {
-  html {
-    font-size: 200%;
-  }
-
   body {
     padding: 2rem;
     padding-bottom: 0rem;
