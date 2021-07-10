@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- import css -->
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <title>To-Do</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <!-- wraps header and input form -->
+
+      <header>
+        <!-- Header -->
+
+        <div class="title">TO-DO</div>
+        <div class="subtitle">
+          There is no 'right time' there is just time, and what you choose to do
+          with it
+        </div>
+      </header>
+
+      <div class="form-container">
+        <!-- Contains Form -->
+
+        <label for="title">Title</label>
+        <input
+          type="text"
+          class="input"
+          id="title"
+          placeholder="Title here..."
+          maxlength="90"
+        />
+        <label for="title">Description</label>
+        <textarea
+          id="textarea"
+          class="input"
+          maxlength="300"
+          placeholder="Description here..."
+        ></textarea>
+        <div class="button-wrapper">
+          <button class="btn" id="btnAdd">
+            <span class="btn-inner add">Add</span>
+          </button>
+          <button class="btn" id="btnClear">
+            <span class="btn-inner clear">Clear</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- End of left-wrapper -->
+    </section>
+
+    <!-- Contains Table -->
+
+    <div class="table-container" id="main_table">
+      <div class="table-header">S.no</div>
+      <div class="table-header">Title</div>
+      <div class="table-header">Description</div>
+      <div class="table-header">Action</div>
+    </div>
+
+    <!-- End of right-wrapper -->
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
